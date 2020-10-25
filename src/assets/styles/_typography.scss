@@ -1,0 +1,52 @@
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $text-light-high;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $text-light-high;
+  text-align: center;
+}
+
+h3 {
+  color: $text-dark-high;
+}
+
+h4 {
+  color: $text-dark-high;
+  font-size: 14px;
+}
+
+p {
+  color: $text-dark-med;
+  font-size: 14px;
+}
+
+span {
+  color: $text-dark-med;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 8vw;
+  }
+  h2, svg {
+    font-size: 4vw;
+  }
+}
+
+
+

@@ -1,0 +1,51 @@
+@import '../../../assets/styles/variables';
+
+.beer {
+  display: grid;
+  gap: $base-spacing;
+  padding: $base-spacing;
+  grid-template-columns: 120px auto;
+  background-color: $bg-lighten-med;
+  border-radius: $base-spacing;
+
+  .left{
+    display: flex;
+    justify-content: center;
+    border-radius: $base-spacing;
+  
+    img {
+    height: 250px;
+    }
+  }
+  .right {
+    display: grid;
+    gap: $base-spacing;
+    text-align: left;
+
+    .beerHeader {
+      display: grid;
+      grid-template-columns: auto 35px 35px 35px;
+      align-items: center;
+      justify-items: center;
+      padding: $base-spacing/4 0;
+      border-top: 2px solid $text-dark-high;
+      border-bottom: 2px solid $text-dark-high;
+      
+      h3, p{
+        justify-self: start;
+      }
+    }
+    
+  
+
+    .description {
+      padding: $base-spacing 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .beer {
+    grid-template-columns: 1fr;
+  }
+}

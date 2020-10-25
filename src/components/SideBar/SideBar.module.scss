@@ -1,0 +1,27 @@
+@import '../../assets/styles/variables';
+
+.sideBarSection{
+  transition: 0.5s ease-in-out;
+  height: 620px;
+
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 1.5rem;
+    
+    svg {
+    transform: rotateX(180deg);
+    transition: 0.5s ease-in-out;
+    
+      &.active{
+        transform: rotateX(0deg)
+      }
+    }
+  }
+
+  &.active {
+    height: 60px;
+    overflow: hidden;
+  }
+}

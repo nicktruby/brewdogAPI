@@ -1,0 +1,23 @@
+@import './variables';
+
+input {
+  width: 100%;
+  padding: $base-spacing/2;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: $base-spacing/2;
+  background-color: $bg-lighten-med;
+  color: $text-dark-med;
+  margin: $base-spacing/2 0;
+
+  &::placeholder{
+    color: $text-dark-med;
+  }
+}
+
+label {
+  font-size: 14px;
+}
+span {
+  font-size: 14px;
+}

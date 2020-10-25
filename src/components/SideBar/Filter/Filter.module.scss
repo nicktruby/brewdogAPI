@@ -1,0 +1,36 @@
+@import '../../../assets/styles/variables';
+
+.filterGrid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr 2fr;
+  align-items: center;
+  justify-items: start;
+
+  label {
+    padding-left: $base-spacing/2
+  }
+
+  .sliderValue{
+    justify-self: center;
+  }
+
+  input {
+    text-align: left;
+  }
+
+  .key{
+    grid-column: 1/4;
+    text-align: left;
+    padding-top: $base-spacing*2;
+
+    p{
+      padding-left: $base-spacing/2;
+      color: $text-light-low;
+    }
+  }
+}
+
+.rangeInput {
+  display: flex;
+
+}
